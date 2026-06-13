@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索筛选 - 国产精品视频网 - 高清国产影视剧在线观看平台</title>
+  <meta name="description" content="搜索国产电影、国产剧集、动漫综艺、日韩影视、欧美影视和高清影视内容。">
+  <meta name="keywords" content="国产精品,国产影视,国产电影,国产剧情,国产综艺,国产动漫,在线观看,高清视频,免费播放,影视剧,电视剧,电影大全,综艺节目,动漫动画,搜索,筛选">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="sticky top-0 z-50 bg-white shadow-sm site-header">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="./index.html" class="flex items-center space-x-2">
+        <span class="logo-mark">▶</span>
+        <span class="text-2xl font-bold text-gray-900">国产精品视频网</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="./index.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">首页</a><a href="./categories.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">分类</a><a href="./category-domestic-movies.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">国产电影</a><a href="./category-domestic-series.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">国产剧集</a><a href="./category-japan-korea.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">日韩影视</a><a href="./category-europe-america.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">欧美影视</a><a href="./ranking.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">排行榜</a><a href="./search.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium text-emerald-600">搜索</a>
+      </div>
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors mobile-menu-button" type="button" aria-label="打开导航">☰</button>
+    </div>
+    <div class="md:hidden mobile-menu hidden py-4 border-t">
+      <div class="flex flex-col space-y-1">
+        <a href="./index.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">首页</a><a href="./categories.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">分类</a><a href="./category-domestic-movies.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">国产电影</a><a href="./category-domestic-series.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">国产剧集</a><a href="./category-japan-korea.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">日韩影视</a><a href="./category-europe-america.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">欧美影视</a><a href="./ranking.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700">排行榜</a><a href="./search.html" class="block px-2 py-2 rounded-lg hover:bg-gray-100 text-gray-700 text-emerald-600">搜索</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="min-h-screen bg-gray-50">
+  <section class="bg-gradient-to-br from-emerald-600 to-teal-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-4">搜索筛选</h1>
+      <p class="text-emerald-50 text-lg max-w-3xl">输入影片名称、类型、年份、地区或标签，快速定位想看的高清影视内容。</p>
+    </div>
+  </section>
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="bg-white rounded-2xl shadow-md p-6 mb-8">
+      <input class="search-input" type="search" placeholder="搜索影片、地区、年份、类型或标签" data-search-input>
+      <div class="flex flex-wrap gap-3 mt-5">
+        <button type="button" data-search-category="all" class="filter-button is-active px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">全部</button><button type="button" data-search-category="国产电影" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">国产电影</button><button type="button" data-search-category="国产剧集" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">国产剧集</button><button type="button" data-search-category="日韩影视" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">日韩影视</button><button type="button" data-search-category="欧美影视" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">欧美影视</button><button type="button" data-search-category="动作冒险" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">动作冒险</button><button type="button" data-search-category="爱情喜剧" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">爱情喜剧</button><button type="button" data-search-category="悬疑犯罪" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">悬疑犯罪</button><button type="button" data-search-category="科幻奇幻" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">科幻奇幻</button><button type="button" data-search-category="动漫综艺" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">动漫综艺</button><button type="button" data-search-category="全球精选" class="filter-button px-4 py-2 rounded-full font-medium bg-white text-gray-700 hover:bg-gray-100 transition-all">全球精选</button>
+      </div>
+    </div>
+    <div class="space-y-4" data-search-results>
+      
+<a href="./movie-0001.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./1.jpg" alt="快乐，告诉我" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">快乐，告诉我</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">母亲因抑郁症自杀未遂昏迷，女儿翻看其少女时代日记，发现自己竟是母亲抑郁的根源。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2023</span></div>
+  </div>
+</a>
+<a href="./movie-0002.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./2.jpg" alt="明末遗恨" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">明末遗恨</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">1644年崇祯自缢后，一个明朝末等小吏带着玉玺穿越千里狼烟，只为了在史书上留下“大明未亡”四个字。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2027</span></div>
+  </div>
+</a>
+<a href="./movie-0003.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./3.jpg" alt="花戎" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">花戎</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">被视为不祥之物的凤凰转世少女，偏偏爱上了注定要亲手杀死她的仙君师父，一场围绕三界的骗局就此展开。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产剧集</span><span>2025</span></div>
+  </div>
+</a>
+<a href="./movie-0004.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./4.jpg" alt="天降奇兵" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">天降奇兵</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">维多利亚女王秘密召集文学名著中的七位反派，组成了史上最不靠谱的拯救小队。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0005.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./5.jpg" alt="反抗军" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">反抗军</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">四名从集中营逃出的犹太人躲进比亚沃维耶扎原始森林，却发现自己不是唯一的“野人”。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2025</span></div>
+  </div>
+</a>
+<a href="./movie-0006.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./6.jpg" alt="街头帮派：如何到达芝麻街" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">街头帮派：如何到达芝麻街</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一群年轻的艺术家和社会活动家，如何在动荡的60年代，用木偶和笑声“入侵”了美国电视。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">动漫综艺</span><span>2021</span></div>
+  </div>
+</a>
+<a href="./movie-0007.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./7.jpg" alt="晚餐时间" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">晚餐时间</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一场寻常的周日家庭晚宴，因为一段遗言的播放，变成了拷问灵魂的审判台。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2023</span></div>
+  </div>
+</a>
+<a href="./movie-0008.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./8.jpg" alt="第16届华表奖" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">第16届华表奖</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一场盛大的电影颁奖礼后台，影帝候选人、导演、资本方在直播倒计时中展开了一场疯狂的暗战。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0009.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./9.jpg" alt="三言二拍" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">三言二拍</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">改编自“三言二拍”，用十个明代市井故事，讲透人世间最极致的欲望。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产剧集</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0010.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./10.jpg" alt="这不只是个间谍故事" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">这不只是个间谍故事</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">女儿整理去世父亲的遗物，发现他竟然是冷战双面间谍，而自己是他最后一份未送出的情报。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0011.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./11.jpg" alt="钢的琴" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">钢的琴</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">为了留住女儿，下岗工人决定用工厂废料亲手造一架钢的琴。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2010</span></div>
+  </div>
+</a>
+<a href="./movie-0012.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./12.jpg" alt="姐姐死了" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">姐姐死了</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">姐姐“自杀”后，妹妹整容成她的样子回到学校，发现姐姐日记里最后一句话写着：“别变成我。”</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">日韩影视</span><span>2025</span></div>
+  </div>
+</a>
+<a href="./movie-0013.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./13.jpg" alt="辛普森一家大电影" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">辛普森一家大电影</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">春田镇被隔离墙围成巨型核废料填埋场，辛普森一家不得不逃往加拿大，却发现那里更离谱。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">动漫综艺</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0014.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./14.jpg" alt="慈禧秘密生活" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">慈禧秘密生活</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">从兰贵人到垂帘听政，她的一生就是一场在紫禁城深渊中向上爬的权力献祭。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2023</span></div>
+  </div>
+</a>
+<a href="./movie-0015.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./15.jpg" alt="托内尔" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">托内尔</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">1943年柏林，一支由犹太音乐家秘密组成的地下乐队，每晚在废墟中演奏，竟能“抹去”附近所有人的战争记忆。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2010</span></div>
+  </div>
+</a>
+<a href="./movie-0016.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./16.jpg" alt="鲜血淋漓第三季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">鲜血淋漓第三季</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一个与世隔绝的复古旅馆中，八名陌生人发现他们每个人都被同一个连环杀手标记过。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2026</span></div>
+  </div>
+</a>
+<a href="./movie-0017.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./17.jpg" alt="园丁" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">园丁</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">模范小区的绿化带接连长出奇异花朵，每株花的根系下都埋着一个失踪者的秘密。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0018.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./18.jpg" alt="爱的季风掠过" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">爱的季风掠过</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一段发生在普吉岛雨季的跨国露水情缘，二十年后因一场葬礼再次交汇。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">爱情喜剧</span><span>2022</span></div>
+  </div>
+</a>
+<a href="./movie-0019.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./19.jpg" alt="施恩得美" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">施恩得美</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一只修炼千年的狐妖为报书生救命之恩，化为美女以身相许，却屡屡弄巧成拙闹出笑话。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">国产电影</span><span>1996</span></div>
+  </div>
+</a>
+<a href="./movie-0020.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./20.jpg" alt="再闯侏㑩纪续集" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">再闯侏㑩纪续集</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">上一集十年后，恐龙占领地球，爷爷带着孙女在城市废墟中寻找最后的恐龙蛋，为了给地球“赎罪”。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2026</span></div>
+  </div>
+</a>
+<a href="./movie-0021.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./21.jpg" alt="平成狸合战" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">平成狸合战</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">东京郊外的狸猫们为了保卫最后的森林，成立“变身特工队”，用幻术与人类的房地产开发商展开了一场啼笑皆非的战争。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">动漫综艺</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0022.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./22.jpg" alt="爱尔玛的情与欲" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">爱尔玛的情与欲</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">1920年代巴黎，富家少妇爱尔玛在丈夫、情人与女画家之间游走，用身体寻找自我的边界。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">欧美影视</span><span>2024</span></div>
+  </div>
+</a>
+<a href="./movie-0023.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./23.jpg" alt="公主与出租车司机" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">公主与出租车司机</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">一个叛逆的财阀千金假装失忆，赖上一个憨厚出租车司机，想体验最后一周的“平民自由”。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">日韩影视</span><span>2026</span></div>
+  </div>
+</a>
+<a href="./movie-0024.html" class="group flex gap-4 p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-100 bg-white">
+  <div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden relative image-frame">
+    <img src="./24.jpg" alt="总觉得邻家更幸福" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.style.display='none'">
+    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center"><span class="play-symbol-sm">▶</span></div>
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors line-clamp-2">总觉得邻家更幸福</h3>
+    <p class="text-sm text-gray-600 mb-2 line-clamp-2">同一栋公寓四户人家的生活秘密，因一封寄错的信被彻底摊开。</p>
+    <div class="flex items-center gap-3 text-xs text-gray-500"><span class="px-2 py-0.5 bg-gray-100 rounded">日韩影视</span><span>2021</span></div>
+  </div>
+</a>
+    </div>
+    <div class="hidden text-center text-gray-500 bg-white rounded-xl p-8" data-search-empty>没有找到匹配内容</div>
+  </section>
+</main>
+
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="logo-mark footer-logo-mark">▶</span>
+          <span class="text-xl font-bold text-white">国产精品视频网</span>
+        </div>
+        <p class="text-sm leading-relaxed">国产精品视频网提供最新最全的国产影视剧、电影、综艺、动漫在线观看，高清画质，免费播放，是您观看国产精品内容的首选平台。汇聚国产剧情片、动作片、爱情片、科幻片等各类精品影视作品。</p>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold mb-4">影视分类</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="./category-domestic-movies.html" class="hover:text-emerald-400 transition-colors">国产电影</a></li><li><a href="./category-domestic-series.html" class="hover:text-emerald-400 transition-colors">国产剧集</a></li><li><a href="./category-japan-korea.html" class="hover:text-emerald-400 transition-colors">日韩影视</a></li><li><a href="./category-europe-america.html" class="hover:text-emerald-400 transition-colors">欧美影视</a></li><li><a href="./category-action-adventure.html" class="hover:text-emerald-400 transition-colors">动作冒险</a></li><li><a href="./category-romance-comedy.html" class="hover:text-emerald-400 transition-colors">爱情喜剧</a></li><li><a href="./category-suspense-crime.html" class="hover:text-emerald-400 transition-colors">悬疑犯罪</a></li><li><a href="./category-sci-fi-fantasy.html" class="hover:text-emerald-400 transition-colors">科幻奇幻</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold mb-4">站点导航</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="./categories.html" class="hover:text-emerald-400 transition-colors">分类总览</a></li>
+          <li><a href="./ranking.html" class="hover:text-emerald-400 transition-colors">影视排行榜</a></li>
+          <li><a href="./search.html" class="hover:text-emerald-400 transition-colors">搜索筛选</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 text-sm text-center">
+      <p>© 国产精品视频网 高清国产影视剧在线观看平台</p>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

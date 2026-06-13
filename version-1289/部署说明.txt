@@ -1,0 +1,8 @@
+静态电影网站生成完成
+
+影片解析数量：2000
+详情页数量：2000
+播放源数量：20，已按影片顺序循环分配。
+封面图片路径：所有页面均引用网站顶级目录下的 1.jpg 到 150.jpg，请部署前把对应图片放到网站根目录。
+入口页面：index.html、categories.html、ranking.html、all.html
+播放器：详情页使用 assets/player.js，并通过 assets/video-dru42stk.js 初始化 HLS。
